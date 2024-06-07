@@ -65,9 +65,11 @@ spec:
       port: 8000
       targetPort: 8000
 ---
+"""
 apiVersion: v1
 kind: Secret
 metadata:
   name: openai
 stringData:
-  OPENAI_API_KEY: "sk-proj-3bWi9qpVVP4gmLUzN19fT3BlbkFJETi36LmbHEu6oyfA95k9"
+  OPENAI_API_KEY: todo
+"""
