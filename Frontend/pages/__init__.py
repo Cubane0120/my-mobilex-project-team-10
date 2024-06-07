@@ -23,7 +23,7 @@ def render(model: PageModel) -> None:
     key = f'/{model.function}/{model.input}'
 
     # Show title
-    st.title(i18n.t(f'{model.function}.title'))
+    st.title('원영적 사고 생성기')
 
     # Load inputs model
     try:

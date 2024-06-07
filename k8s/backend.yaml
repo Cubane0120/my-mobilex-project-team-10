@@ -20,7 +20,8 @@ spec:
       containers:
         - name: server
           # TODO(user): change to your image
-          image: quay.io/ulagbulag/mobilex-exp-backend:v0.7
+          #image: quay.io/ulagbulag/mobilex-exp-backend:v0.7
+          image: cubane0120/mobilex-exp-backend:v2.1
           env:
             - name: BASE_URL
               value: /api/v1
@@ -63,11 +64,10 @@ spec:
       protocol: TCP
       port: 8000
       targetPort: 8000
-# ---
-# apiVersion: v1
-# kind: Secret
-# metadata:
-#   name: openai
-# stringData:
-#   # TODO(user): change your own token!
-#   OPENAI_API_KEY: "TODO"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: openai
+stringData:
+  OPENAI_API_KEY: "sk-proj-3bWi9qpVVP4gmLUzN19fT3BlbkFJETi36LmbHEu6oyfA95k9"

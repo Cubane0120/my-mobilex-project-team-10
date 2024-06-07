@@ -20,7 +20,8 @@ spec:
       containers:
         - name: server
           # TODO(user): change to your image
-          image: quay.io/ulagbulag/mobilex-exp-frontend:v0.7
+          #image: quay.io/ulagbulag/mobilex-exp-frontend:v0.7
+          image: cubane0120/mobilex-exp-frontend:v2.1
           env:
             - name: FRONTEND_CLIENT__BASE_URL
               value: http://backend:8000
